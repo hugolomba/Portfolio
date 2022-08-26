@@ -1,0 +1,60 @@
+@use '../variables'
+@use '../mixins'
+
+nav
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 2rem
+    margin-top: 1rem
+    background: variables.$bg-color
+    border-radius: 1rem
+    padding: 0.8rem
+
+
+    .logo
+        // width:2rem
+        // height: auto
+        font-size: 3rem
+        margin: 0
+        background: variables.$gradient 
+        // background-image: url("./hugo.JPEG")
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+    .img-logo
+        margin-left: 3rem
+        width: 20rem
+        height: auto
+
+    .svg-logo
+        width: 10rem    
+        color: variables.$gradient
+
+    .nav-btn
+        @include mixins.btn
+    // width: 10px
+
+    .nav-buttons
+        display: flex
+        gap: 2rem
+
+        .nav-btn
+            @include mixins.btn   
+        // :hover
+        //     box-shadow: black
+        //     text-shadow: black
+        :hover,
+        :focus,
+        :active 
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.45)
+    
+// h1
+//         width: 100%
+//         font-size: 3rem
+//         margin-bottom: 4rem
+//         background: variables.$gradient 
+//         // background-image: url("./hugo.JPEG")
+//         -webkit-background-clip: text
+//         -webkit-text-fill-color: transparent

@@ -1,7 +1,10 @@
+import "../styles/components/aboutContainer.sass";
+
 const AboutContainer = () => {
   return (
     <section className="about-container">
-      <h2>Sobre</h2>
+      {/* <h1>Hugo Miranda Lomba</h1> */}
+      <h2>Sobre mim</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In posuere
         dolor at dolor malesuada scelerisque. Proin dapibus dictum ex in varius.

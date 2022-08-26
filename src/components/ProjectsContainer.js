@@ -1,17 +1,18 @@
+import ProjectCard from "./ProjectCard";
+import "../styles/components/projectsContainer.sass";
+
 const ProjectsContainer = () => {
   return (
-    <section className="projects-container">
+    <div>
       <h2>Projetos</h2>
-      <p>
-        Ut ac dapibus enim. Suspendisse potenti. Pellentesque habitant morbi
-        tristique senectus et netus et malesuada fames ac turpis egestas. Nam ac
-        blandit urna. Quisque ac efficitur ante. Nam ultrices ac metus quis
-        suscipit. Phasellus tristique a tellus et laoreet.
-      </p>
-      <a href="#" className="btn">
-        Ver Projetos
-      </a>
-    </section>
+      <section className="projects-container">
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        {/* <ProjectCard /> */}
+      </section>
+      <button>Todos os Projetos</button>
+    </div>
   );
 };
 

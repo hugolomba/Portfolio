@@ -11,14 +11,22 @@
     width: 80%
     border-radius: variables.$card-border-radius
 
+        
+
     .info-card
         @include mixins.center
         justify-content: start
         gap: 1rem
-        padding-bottom: .8rem
-        margin-bottom: .8rem
+        // padding-bottom: .8rem
+        // margin-bottom: .8rem
         border-bottom: 1px solid #444
         width: 100%
+        // margin-left: 0
+        // margin-right: 0
+
+        div
+            margin-left: 0
+            margin-right: 0
 
         h3
             color: variables.$text-color-secondary
@@ -28,6 +36,7 @@
         p
             color: variables.$text-color
             font-weight: bold
+            margin-top: 0
 
         svg
             background-color: variables.$bg-color
@@ -35,6 +44,8 @@
             width: 2rem
             height: 2rem
             border-radius: variables.$card-border-radius
+            margin-left: 0
+            margin-right: 0
 
         #phone-icon
             color: #e93b81
