@@ -9,9 +9,10 @@ const ProjectsContainer = () => {
         <ProjectCard />
         <ProjectCard />
         <ProjectCard />
-        {/* <ProjectCard /> */}
       </section>
-      <button>Todos os Projetos</button>
+      <div className="projects-container-btn">
+        <button>Ver Todos</button>
+      </div>
     </div>
   );
 };

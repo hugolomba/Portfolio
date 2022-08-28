@@ -7,9 +7,13 @@ const Navbar = () => {
   return (
     <nav>
       {/* <img src={logo} alt="logo" className="logo" /> */}
-      <img src={logo} alt="logo" className="img-logo" />
+      {/* <img src={logo} alt="logo" className="img-logo" /> */}
       {/* <span className="logo">Hugo Miranda Lomba</span> */}
-      {/* <h1>Hugo Miranda Lomba</h1> */}
+      <div className="main-tittle">
+        <span>{"<"}</span>
+        <h1>HUGO MIRANDA</h1>
+        <span>{">"}</span>
+      </div>
       <div className="nav-buttons">
         <span className="nav-btn">Currículo</span>
         <span className="nav-btn">Contato</span>

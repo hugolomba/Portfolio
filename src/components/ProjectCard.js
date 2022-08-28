@@ -16,12 +16,12 @@ const ProjectCard = () => {
       <img src={projectOne} alt="animation of gameplay" />
       <div className="project-card-info">
         <h3>Project_Name</h3>
-        <h5>Type: TYPE_OF_PROJECT</h5>
         <div className="project-tecnologies">
-          <DiHtml5 />
-          <DiCss3 />
-          <DiJsBadge />
+          <DiHtml5 id="html" />
+          <DiCss3 id="css" />
+          <DiJsBadge id="js" />
         </div>
+        <p>Description: Um jogo desenvolvido usando canvas</p>
       </div>
 
       <button>Ver Detalhes</button>
