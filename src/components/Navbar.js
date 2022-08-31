@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "../styles/components/navbar.sass";
 import logo from "../img/logo4.png";
 import logoSvg from "../img/logo.svg";
@@ -10,7 +12,7 @@ const Navbar = () => {
       {/* <img src={logo} alt="logo" className="img-logo" /> */}
       {/* <span className="logo">Hugo Miranda Lomba</span> */}
       <div className="main-tittle">
-        <span>{"<"}</span>
+        <span>{"< />"}</span>
         <h1>HUGO MIRANDA</h1>
         <span>{">"}</span>
       </div>

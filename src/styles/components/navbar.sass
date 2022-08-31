@@ -1,13 +1,17 @@
 @use '../variables'
-@use '../mixins'
+@use '../mixins'    
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap')
+
+
 
 nav
     width: 100%
+    max-height: 55px
     display: flex
     justify-content: space-between
     align-items: center
-    margin-bottom: 4rem
-    margin-top: 1rem
+    // margin-bottom: 4rem
+    margin-top: 0.5rem
     background: variables.$bg-color
     border-radius: 1rem
     padding-bottom: 0.5rem
@@ -89,3 +93,27 @@ nav
 //         // background-image: url("./hugo.JPEG")
 //         -webkit-background-clip: text
 //         -webkit-text-fill-color: transparent
+
+.navbar-menu 
+    display: flex
+    flex-direction: row
+    gap: 2rem
+    list-style-type: none
+    font-size: 1.2rem
+    color: white
+    justify-content: space-evenly
+    /* margin-right: 3rem; */
+    margin: 0 3rem
+    /* align-items: baseline; */
+
+    a
+        text-decoration: none
+        color: white
+        padding-bottom: 0.2rem
+    
+    .active 
+        // border-bottom: 5px solid  #3aa17e
+        border-bottom: 0.3rem solid
+        border-image-slice: 1
+        // border-width: 5px
+        border-image-source: variables.$gradient

@@ -7,6 +7,9 @@
     font-family: variables.$font-stack
     box-sizing: border-box
     max-width: 1200px
+  
+   
+    
 
 html
     // Font-size: 62.5%
@@ -26,5 +29,25 @@ body
     // background-size: cover
   
 
-a, svg 
+a, svg, button
     transition: .4s
+
+li:hover
+    
+    background: variables.$gradient 
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+.grow:hover
+    -webkit-transform: scale(1.1)
+    -ms-transform: scale(1.1)
+    transform: scale(1.1)
+
+
+.fade
+
+    opacity: 0.9
+
+.fade:hover
+
+    opacity:1

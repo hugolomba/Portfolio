@@ -2,7 +2,8 @@
 @use "../mixins"
 
 .project-card 
-    width: 13rem
+    transition: all 0.3s ease
+    width: 16rem
     // margin-right: 3rem
     color: variables.$text-color
     display: flex
@@ -12,22 +13,23 @@
 
     h3 
         // font-size: 2rem
-        margin-bottom: 0.7rem 
+        margin-bottom: 0rem 
     img
-        width: 13rem
+        width: 16rem
         height: auto
     
     button
+        @include mixins.btn
         
-        width: 7rem
-        padding: 0.4rem 0.9rem
-        color: variables.$text-color
-        background: variables.$gradient
-        text-decoration: none
-        border-radius: 1rem
-        appearance: auto
+        // width: 7rem
+        // padding: 0.4rem 0.9rem
+        // color: variables.$text-color
+        // background: variables.$gradient
+        // text-decoration: none
+        // border-radius: 0.4rem
+        // appearance: auto
+        // border-style: none
 
-        border-style: none
         
 
 
@@ -43,11 +45,41 @@
 
 .project-tecnologies
     svg
+        padding: .6em
+        background-color: variables.$bg-color-secondary
+        // background-color: variables.$gradient
+        border-radius: variables.$card-border-radius
+        color: #7d7d7d
+        // font-size: 1.3rem
+
+        font-size: 1.3rem
+        // color: white
+        margin-bottom: 2rem
+        margin-right: 01rem
+
+    :hover
+        transition-duration: 1s
+        background: variables.$gradient
         color: white
-        margin-bottom: 0rem
-        margin-right: 0.3rem
-    #html
-        color: #E44D26
+        > svg
+            color: variables.$text-color
+
+.grow:hover
+    -webkit-transform: scale(1.1)
+    -ms-transform: scale(1.1)
+    transform: scale(1.1)
+
+
+.fade
+
+    opacity: 0.9
+
+.fade:hover
+
+    opacity:1
+
+    // #github
+    //     color: #E44D26
     
     #css
         color: #1572B6
