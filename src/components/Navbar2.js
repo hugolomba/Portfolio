@@ -3,37 +3,53 @@ import logo from "../img/logo4.png";
 import logoSvg from "../img/logo.svg";
 import "../styles/components/hover.css";
 import { Link, NavLink } from "react-router-dom";
+import { ImMenu } from "react-icons/im";
+import { AiFillCloseCircle } from "react-icons/ai";
+import { useState } from "react";
 
 const Navbar = () => {
-  return (
-    <nav>
-      {/* <img src={logo} alt="logo" className="logo" /> */}
-      {/* <img src={logo} alt="logo" className="img-logo" /> */}
-      {/* <span className="logo">Hugo Miranda Lomba</span> */}
-      <div className="main-tittle">
-        <span>{"<"}</span>
-        <h1>HUGO MIRANDA</h1>
-        <span>{">"}</span>
-      </div>
+  const [menuStatus, setMenuStatus] = useState(false);
+  const handleClick = () => {
+    setMenuStatus(!menuStatus);
+    console.log(menuStatus);
+  };
 
-      <ul className="navbar-menu">
-        <NavLink to="/">
+  const handleClickLink = () => (menuStatus ? setMenuStatus(!menuStatus) : "");
+
+  return (
+    <nav className="nav-light">
+      <Link to="/">
+        <div className="main-tittle">
+          <span>{"<"}</span>
+          <h1>HUGO MIRANDA</h1>
+          <span>{">"}</span>
+        </div>
+      </Link>
+
+      <ul
+        className={`navbar-menu ${menuStatus ? "menu-active" : "navbar-menu"}`}
+      >
+        <NavLink onClick={handleClickLink} to="/">
           {" "}
           <li>Início</li>{" "}
         </NavLink>
-        <NavLink to="/about">
-          <li>Quem sou eu</li>
+        <NavLink onClick={handleClickLink} to="/about">
+          <li>Sobre mim</li>
         </NavLink>
-        <NavLink to="/resume">
+        <NavLink onClick={handleClickLink} to="/resume">
           <li>Currículo</li>{" "}
         </NavLink>
-        <NavLink to="/projects">
+        <NavLink onClick={handleClickLink} to="/projects">
           <li>Projetos</li>{" "}
         </NavLink>
-        <NavLink to="/contact">
+        <NavLink onClick={handleClickLink} to="/contact">
           <li>Contato</li>{" "}
         </NavLink>
       </ul>
+
+      <div className="menu-btn" onClick={handleClick}>
+        {menuStatus ? <AiFillCloseCircle /> : <ImMenu />}
+      </div>
 
       {/* <div className="nav-buttons">
         <span className="nav-btn">Currículo</span>

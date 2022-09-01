@@ -18,7 +18,9 @@ const technologies = [
   { id: "css", name: "CSS3", icon: <DiCss3 /> },
 
   { id: "git", name: "GIT", icon: <DiGit /> },
+  { id: "git", name: "GIT", icon: <DiGit /> },
   { id: "sass", name: "Sass", icon: <DiSass /> },
+  { id: "nodejs", name: "NodeJs", icon: <DiNodejsSmall /> },
 ];
 
 const TechnologiesContainer = () => {

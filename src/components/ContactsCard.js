@@ -44,7 +44,7 @@ const socialNetworks = [
 
 const ContactsCard = () => {
   return (
-    <section id="contacts-card">
+    <section className="contacts-card">
       {socialNetworks.map((network) => {
         return (
           <a

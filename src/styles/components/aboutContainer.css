@@ -1,0 +1,25 @@
+.about-container {
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+}
+.about-container h1 {
+  width: 100%;
+  font-size: 3rem;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+  background: linear-gradient(90deg, #00537e 0%, #3aa17e 98%);
+}
+.about-container span {
+  width: 100%;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  margin-top: 0rem;
+  background: linear-gradient(90deg, #00537e 0%, #3aa17e 98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-container span:nth-child(2) {
+  font-size: 2rem;
+  margin-left: 13rem;
+  margin-bottom: 40rem;
+}/*# sourceMappingURL=aboutContainer.css.map */

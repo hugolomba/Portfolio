@@ -1,0 +1,36 @@
+#social-networks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 1.5rem;
+}
+#social-networks .social-btn {
+  padding: 0.6em;
+  background-color: #161426;
+  border-radius: 5px;
+  color: #333;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#social-networks #linkedin {
+  color: #7d7d7d;
+}
+#social-networks #github {
+  color: #7d7d7d;
+}
+#social-networks #tel {
+  color: #7d7d7d;
+}
+#social-networks #email {
+  color: #7d7d7d;
+}
+#social-networks :hover {
+  background: linear-gradient(90deg, #00537e 0%, #3aa17e 98%);
+}
+#social-networks :hover > svg {
+  color: white;
+}/*# sourceMappingURL=socialnetworks.css.map */

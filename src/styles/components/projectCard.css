@@ -1,0 +1,97 @@
+.project-card {
+  transition: all 0.3s ease;
+  width: 16rem;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-card h3 {
+  margin-bottom: 0rem;
+}
+.project-card img {
+  width: 16rem;
+  height: auto;
+}
+.project-card button {
+  width: 9rem;
+  color: #FFF;
+  padding: 0.4rem 0.9rem;
+  background: linear-gradient(90deg, #00537e 0%, #3aa17e 98%);
+  text-decoration: none;
+  border-radius: 0.4rem;
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+  border-style: none;
+}
+
+.project-card-info {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.project-card-info p {
+  margin-top: 0.4rem;
+  text-align: left;
+}
+
+.project-tecnologies svg {
+  padding: 0.6em;
+  background-color: #161426;
+  border-radius: 5px;
+  color: #7d7d7d;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+}
+.project-tecnologies :hover {
+  transition-duration: 1s;
+  background: linear-gradient(90deg, #00537e 0%, #3aa17e 98%);
+  color: white;
+}
+.project-tecnologies :hover > svg {
+  color: #FFF;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+.fade {
+  opacity: 0.9;
+}
+
+.fade:hover {
+  opacity: 1;
+}
+.fade:hover #css {
+  color: #1572B6;
+}
+.fade:hover #js {
+  color: #F0DB4F;
+}
+
+#css svg {
+  color: #1572B6;
+}
+
+#js svg {
+  color: #F0DB4F;
+}
+
+#node svg {
+  color: #83CD29;
+}
+
+#mysql svg {
+  color: #00618A;
+}
+
+#react svg {
+  color: #61DAFB;
+}
+
+#html svg {
+  color: black;
+}/*# sourceMappingURL=projectCard.css.map */

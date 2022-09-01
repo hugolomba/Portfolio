@@ -1,0 +1,56 @@
+.technologies-container {
+  margin-bottom: 1.5rem;
+}
+.technologies-container .technologies-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.technologies-container .technology-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.3rem;
+  border: 1px solid #333;
+  width: 20%;
+  border-radius: 5px;
+  margin: 0;
+}
+.technologies-container .technology-card h3 {
+  color: #FFF;
+  margin-bottom: 1rem;
+  margin: 0;
+}
+.technologies-container .technology-card svg {
+  margin: 0;
+  font-size: 2rem;
+}
+.technologies-container #html svg {
+  color: #E44D26;
+}
+.technologies-container #css svg {
+  color: #1572B6;
+}
+.technologies-container #js svg {
+  color: #F0DB4F;
+}
+.technologies-container #git svg {
+  color: #ea4e31;
+}
+.technologies-container #sass svg {
+  color: #c66395;
+}
+.technologies-container #react svg {
+  color: #61DAFB;
+}
+.technologies-container #nodejs svg {
+  color: #75af5e;
+}
+.technologies-container #photoshop svg {
+  color: #30a3f8;
+}
+
+.tecnologies-card :hover {
+  background: linear-gradient(90deg, #00537e 0%, #3aa17e 98%);
+}/*# sourceMappingURL=tecnologiesContainer.css.map */

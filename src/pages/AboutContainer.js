@@ -8,6 +8,7 @@ import {
   DiReact,
   DiGit,
   DiSass,
+  DiPhotoshop,
 } from "react-icons/di";
 
 const AboutContainer = () => {
@@ -19,6 +20,8 @@ const AboutContainer = () => {
 
     { id: "git", name: "GIT", icon: <DiGit /> },
     { id: "sass", name: "Sass", icon: <DiSass /> },
+    { id: "nodejs", name: "NodeJs", icon: <DiNodejsSmall /> },
+    { id: "photoshop", name: "Photoshop", icon: <DiPhotoshop /> },
   ];
 
   return (
