@@ -11,7 +11,9 @@ nav {
   background: var(--bg-color);
   border-radius: 1rem;
   position: -webkit-sticky;
-  position: sticky;
+  /* position: sticky; */
+  /* top: 0; */
+  z-index: 1000;
 }
 nav a {
   text-decoration: none;
@@ -21,7 +23,7 @@ nav a {
 nav .menu-btn {
   display: none;
   font-size: 1.5rem;
-  margin: 1rem;
+  /* margin: 1rem; */
   padding: 0.3rem;
   color: var(--text-color);
   cursor: pointer;
@@ -110,3 +112,21 @@ nav .main-tittle span {
 .hidden {
   visibility: hidden;
 }
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 1.5rem;
+}
+
+@media (max-width: 660px) {
+  nav {
+    position: sticky;
+    top: 0;
+  }
+}
+
+/* .switch {
+  width: 1rem;
+} */

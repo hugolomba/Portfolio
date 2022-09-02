@@ -1,4 +1,5 @@
 import "../styles/components/navbar.css";
+import "../styles/components/switch.css";
 // import "../styles/variables.css";
 import { Link, NavLink } from "react-router-dom";
 import { ImMenu } from "react-icons/im";
@@ -29,7 +30,33 @@ const Navbar = () => {
         </div>
       </Link>
 
-      <input type="checkbox" onClick={toggleTheme} />
+      <div className="nav-btn">
+        {/* <input type="button" onClick={toggleTheme} /> */}
+
+        <div className="switch">
+          <input type="checkbox" name="toggle" onChange={toggleTheme} />
+          <label htmlFor="toggle">
+            <i className="bulb">
+              <span className="bulb-center" />
+              <span className="filament-1" />
+              <span className="filament-2" />
+              <span className="reflections">
+                <span />
+              </span>
+              <span className="sparks">
+                <i className="spark1" />
+                <i className="spark2" />
+                <i className="spark3" />
+                <i className="spark4" />
+              </span>
+            </i>
+          </label>
+        </div>
+
+        <div className="menu-btn" onClick={handleClick}>
+          {menuStatus ? <AiFillCloseCircle /> : <ImMenu />}
+        </div>
+      </div>
 
       <ul
         className={`navbar-menu ${menuStatus ? "menu-active" : "navbar-menu"}`}
@@ -51,10 +78,6 @@ const Navbar = () => {
           <li>Contato</li>{" "}
         </NavLink>
       </ul>
-
-      <div className="menu-btn" onClick={handleClick}>
-        {menuStatus ? <AiFillCloseCircle /> : <ImMenu />}
-      </div>
 
       {/* <div className="nav-buttons">
         <span className="nav-btn">Currículo</span>

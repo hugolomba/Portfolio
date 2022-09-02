@@ -29,7 +29,7 @@
 .main-content p {
   color: var(--text-color-secondary);
   margin-bottom: 1rem;
-  line-height: 1.3rem;
+  /* line-height: 1.3rem; */
 }
 .main-content .btn {
   align-self: start;

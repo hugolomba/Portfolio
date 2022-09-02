@@ -9,17 +9,6 @@
   margin-top: 0rem;
   background: var(--gradient);
 }
-/* .about-container span {
-  width: 100%;
-  font-size: 3rem;
-  margin-bottom: 4rem;
-  margin-top: 0rem;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.about-container p {
+  font-size: 1.3rem;
 }
-.about-container span:nth-child(2) {
-  font-size: 2rem;
-  margin-left: 13rem;
-  margin-bottom: 40rem;
-} # sourceMappingURL=aboutContainer.css.map */

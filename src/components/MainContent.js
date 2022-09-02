@@ -15,10 +15,6 @@ const MainContent = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   return (
     <main className={`main-content ${theme}`}>
-      {/* <AboutContainer /> */}
-      <button className="toggle-theme-btn" onClick={toggleTheme}>
-        Mudar
-      </button>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<AboutContainer />} />

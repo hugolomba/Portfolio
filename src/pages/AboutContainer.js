@@ -35,59 +35,20 @@ const AboutContainer = () => {
       <h2>Sobre mim</h2>
       <section className={`about-container ${theme}`}>
         {/* <span>Oi! 👋</span> */}
-        {/* <h1>Hugo Miranda Lomba</h1>
-      <span>Desenvolvedor Web</span> */}
-
-        {/* <h1>Oi, meu nome é Hugo Miranda Lomba</h1> */}
 
         <p>
-          Tenho alta capacidade analítica, força de vontade e facilidade para
-          aprender, sou proativo, determinado, criativo e curioso. Tenho ótimo
-          relacionamento interpessoal e uma vivência de seis anos no setor
-          bancários, o que me agregou vasta experiência com trabalho em equipe,
-          gestão e entregas de resultados.
-        </p>
-        <p>
-          Tenho alta capacidade analítica, força de vontade e facilidade para
-          aprender, sou proativo, determinado, criativo e curioso. Tenho ótimo
-          relacionamento interpessoal e uma vivência de seis anos no setor
-          bancários, o que me agregou vasta experiência com trabalho em equipe,
-          gestão e entregas de resultados.
-        </p>
-        <p>
-          Tenho alta capacidade analítica, força de vontade e facilidade para
-          aprender, sou proativo, determinado, criativo e curioso. Tenho ótimo
-          relacionamento interpessoal e uma vivência de seis anos no setor
-          bancários, o que me agregou vasta experiência com trabalho em equipe,
-          gestão e entregas de resultados.
-        </p>
-        <p>
-          Tenho alta capacidade analítica, força de vontade e facilidade para
-          aprender, sou proativo, determinado, criativo e curioso. Tenho ótimo
-          relacionamento interpessoal e uma vivência de seis anos no setor
-          bancários, o que me agregou vasta experiência com trabalho em equipe,
-          gestão e entregas de resultados.
-        </p>
-        <p>
-          Tenho alta capacidade analítica, força de vontade e facilidade para
-          aprender, sou proativo, determinado, criativo e curioso. Tenho ótimo
-          relacionamento interpessoal e uma vivência de seis anos no setor
-          bancários, o que me agregou vasta experiência com trabalho em equipe,
-          gestão e entregas de resultados.
-        </p>
-        <p>
-          Tenho alta capacidade analítica, força de vontade e facilidade para
-          aprender, sou proativo, determinado, criativo e curioso. Tenho ótimo
-          relacionamento interpessoal e uma vivência de seis anos no setor
-          bancários, o que me agregou vasta experiência com trabalho em equipe,
-          gestão e entregas de resultados.
-        </p>
-        <p>
-          Tenho alta capacidade analítica, força de vontade e facilidade para
-          aprender, sou proativo, determinado, criativo e curioso. Tenho ótimo
-          relacionamento interpessoal e uma vivência de seis anos no setor
-          bancários, o que me agregou vasta experiência com trabalho em equipe,
-          gestão e entregas de resultados.
+          Oi! Meu nome é Hugo Miranda Lomba, eu sou um desenvolvedor Web em
+          formação, um entusiasta e apaixonado por tecnologia.
+          <p>
+            Estou em processo de transição para a área de tecnologia, estudando,
+            praticando e frequentando o bootcamp de Desenvolvimento Web pela
+            Ironhacker São Paulo.
+          </p>
+          <p>
+            Criei esse site/portfólio para praticar o que venho aprendendo e
+            progredir com as habilidades necessárias para atuar como
+            desenvolvedor.
+          </p>
         </p>
 
         <section className="technologies-container">
