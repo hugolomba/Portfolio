@@ -1,4 +1,4 @@
-import "../styles/components/contactForm.sass";
+import "../styles/components/contactForm.css";
 import emailjs from "emailjs-com";
 import { FaStarAndCrescent } from "react-icons/fa";
 import { useState } from "react";

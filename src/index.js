@@ -3,15 +3,18 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
+import { ThemeProviderWrapper } from "./context/theme.context";
 
-import "./styles/index.sass";
+import "./styles/index.css";
 import "./styles/normalize.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
-      <App />
+      <ThemeProviderWrapper>
+        <App />
+      </ThemeProviderWrapper>
     </Router>
   </React.StrictMode>
 );

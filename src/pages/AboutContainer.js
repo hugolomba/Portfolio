@@ -1,4 +1,9 @@
-import "../styles/components/aboutContainer.sass";
+import "../styles/components/aboutContainer.css";
+import "../styles/components/tecnologiesContainer.css";
+
+import { useContext } from "react";
+import { ThemeContext } from "../context/theme.context";
+
 import {
   DiHtml5,
   DiCss3,
@@ -19,15 +24,16 @@ const AboutContainer = () => {
     { id: "css", name: "CSS3", icon: <DiCss3 /> },
 
     { id: "git", name: "GIT", icon: <DiGit /> },
-    { id: "sass", name: "Sass", icon: <DiSass /> },
     { id: "nodejs", name: "NodeJs", icon: <DiNodejsSmall /> },
     { id: "photoshop", name: "Photoshop", icon: <DiPhotoshop /> },
   ];
 
+  const { theme } = useContext(ThemeContext);
+
   return (
     <div>
       <h2>Sobre mim</h2>
-      <section className="about-container">
+      <section className={`about-container ${theme}`}>
         {/* <span>Oi! 👋</span> */}
         {/* <h1>Hugo Miranda Lomba</h1>
       <span>Desenvolvedor Web</span> */}

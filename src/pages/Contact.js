@@ -1,7 +1,7 @@
 import ContactForm from "../components/ContactForm";
 import ContactsCard from "../components/ContactsCard";
 import AfterForm from "../components/AfterForm";
-import "../styles/components/contact.sass";
+import "../styles/components/contact.css";
 import { useState } from "react";
 
 const Contact = () => {

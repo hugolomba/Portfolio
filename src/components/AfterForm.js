@@ -1,4 +1,4 @@
-import "../styles/components/afterForm.sass";
+import "../styles/components/afterForm.css";
 
 const AfterForm = (props) => {
   console.log("props afterform", props);

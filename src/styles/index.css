@@ -16,12 +16,14 @@ body {
   background-repeat: repeat;
 }
 
-a, svg, button {
+a,
+svg,
+button {
   transition: 0.4s;
 }
 
 li:hover {
-  background: linear-gradient(90deg, #00537e 0%, #3aa17e 98%);
+  background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -36,4 +38,4 @@ li:hover {
 
 .fade:hover {
   opacity: 1;
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */

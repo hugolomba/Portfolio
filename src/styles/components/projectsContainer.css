@@ -18,13 +18,13 @@
 }
 .projects-container-btn button {
   width: 9rem;
-  color: #FFF;
+  color: var(--text-color);
   padding: 0.4rem 0.9rem;
-  background: linear-gradient(90deg, #00537e 0%, #3aa17e 98%);
+  background: var(--gradient);
   text-decoration: none;
   border-radius: 0.4rem;
   -webkit-appearance: auto;
-     -moz-appearance: auto;
-          appearance: auto;
+  -moz-appearance: auto;
+  appearance: auto;
   border-style: none;
-}/*# sourceMappingURL=projectsContainer.css.map */
+} /*# sourceMappingURL=projectsContainer.css.map */

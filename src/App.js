@@ -4,7 +4,7 @@ import Navbar2 from "./components/Navbar2";
 import Footer from "./components/Footer";
 
 import { useState } from "react";
-import "./styles/components/app.sass";
+import "./styles/app.css";
 
 function App() {
   return (

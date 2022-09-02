@@ -1,14 +1,17 @@
-import "../styles/components/navbar.sass";
-import logo from "../img/logo4.png";
-import logoSvg from "../img/logo.svg";
-import "../styles/components/hover.css";
+import "../styles/components/navbar.css";
+// import "../styles/variables.css";
 import { Link, NavLink } from "react-router-dom";
 import { ImMenu } from "react-icons/im";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { useState } from "react";
 
+import { useContext } from "react";
+import { ThemeContext } from "../context/theme.context";
+
 const Navbar = () => {
   const [menuStatus, setMenuStatus] = useState(false);
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
   const handleClick = () => {
     setMenuStatus(!menuStatus);
     console.log(menuStatus);
@@ -17,7 +20,7 @@ const Navbar = () => {
   const handleClickLink = () => (menuStatus ? setMenuStatus(!menuStatus) : "");
 
   return (
-    <nav className="nav-light">
+    <nav className={theme}>
       <Link to="/">
         <div className="main-tittle">
           <span>{"<"}</span>
@@ -25,6 +28,8 @@ const Navbar = () => {
           <span>{">"}</span>
         </div>
       </Link>
+
+      <input type="checkbox" onClick={toggleTheme} />
 
       <ul
         className={`navbar-menu ${menuStatus ? "menu-active" : "navbar-menu"}`}

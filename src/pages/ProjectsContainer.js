@@ -1,5 +1,5 @@
 import ProjectCard from "../components/ProjectCard";
-import "../styles/components/projectsContainer.sass";
+import "../styles/components/projectsContainer.css";
 
 const ProjectsContainer = () => {
   return (

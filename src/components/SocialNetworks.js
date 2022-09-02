@@ -7,7 +7,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 
-import "../styles/components/socialnetworks.sass";
+import "../styles/components/socialnetworks.css";
 
 const socialNetworks = [
   {

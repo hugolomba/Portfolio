@@ -1,1 +1,30 @@
-/*# sourceMappingURL=variables.css.map */
+/* Variáveis */
+:root {
+  --font-stack: "Helvetica";
+  --text-color: #fff;
+  --text-color-secondary: #a6a6a6;
+  --bg-color: #0d0a18;
+  --bg-color-secondary: #161426;
+  --gradient: linear-gradient(90deg, #00537e 0%, #3aa17e 98%);
+  /* --text-color-i:  */
+}
+
+.light-mode {
+  --text-color: #2b2b2b;
+  --text-color-secondary: #a6a6a6;
+  --bg-color: rgba(244, 241, 241, 1);
+  --bg-color-secondary: #e6e6e6;
+  --gradient: linear-gradient(
+    90deg,
+    rgba(250, 82, 82, 1) 0%,
+    rgba(221, 36, 118, 1) 98%
+  );
+  --text-color-i: #fff;
+
+  --bg-img: background-image: url(../img/cool-background.png);
+}
+
+/* @import "../variables.css"; */
+/* index */
+#root {
+}

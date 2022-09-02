@@ -7,7 +7,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 
-import "../styles/components/contactsCard.sass";
+import "../styles/components/contactsCard.css";
 
 const socialNetworks = [
   {

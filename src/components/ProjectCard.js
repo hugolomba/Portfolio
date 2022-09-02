@@ -1,5 +1,5 @@
 import projectOne from "../img/demo-img.png";
-import "../styles/components/projectCard.sass";
+import "../styles/components/projectCard.css";
 
 import { FaGithub, FaLaptop } from "react-icons/fa";
 

@@ -8,9 +8,9 @@
 }
 #social-networks .social-btn {
   padding: 0.6em;
-  background-color: #161426;
+  background-color: var(--bg-color-secondary);
   border-radius: 5px;
-  color: #333;
+  color: var(--text-color-secondary);
   font-size: 1.3rem;
   display: flex;
   justify-content: center;
@@ -29,8 +29,8 @@
   color: #7d7d7d;
 }
 #social-networks :hover {
-  background: linear-gradient(90deg, #00537e 0%, #3aa17e 98%);
+  background: var(--gradient);
 }
 #social-networks :hover > svg {
   color: white;
-}/*# sourceMappingURL=socialnetworks.css.map */
+} /*# sourceMappingURL=socialnetworks.css.map */

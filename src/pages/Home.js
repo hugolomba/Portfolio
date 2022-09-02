@@ -1,9 +1,13 @@
 import SocialNetworks from "../components/SocialNetworks";
-import "../styles/components/home.sass";
+import "../styles/components/home.css";
+
+import { useContext } from "react";
+import { ThemeContext } from "../context/theme.context";
 
 const Home = () => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <div className="home-container">
+    <div className={`home-container ${theme}`}>
       <p>Olá Mundo, eu sou</p>
       <h1>Hugo Miranda Lomba</h1>
 

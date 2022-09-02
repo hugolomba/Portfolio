@@ -8,11 +8,11 @@
 }
 .menu-list a {
   text-decoration: none;
-  color: #FFF;
+  color: var(--text-color);
   padding-bottom: 0.2rem;
 }
 .menu-list .active {
   border-bottom: 0.3rem solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(90deg, #00537e 0%, #3aa17e 98%);
-}/*# sourceMappingURL=menuList.css.map */
+  border-image-source: var(--gradient);
+} /*# sourceMappingURL=menuList.css.map */
