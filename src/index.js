@@ -4,6 +4,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
 import { ThemeProviderWrapper } from "./context/theme.context";
+import { HashRouter } from "react-router-dom";
 
 import "./styles/index.css";
 import "./styles/normalize.css";
@@ -11,11 +12,11 @@ import "./styles/normalize.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Router>
+    <HashRouter>
       <ThemeProviderWrapper>
         <App />
       </ThemeProviderWrapper>
-    </Router>
+    </HashRouter>
   </React.StrictMode>
 );
 
