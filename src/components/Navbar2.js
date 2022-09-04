@@ -4,6 +4,7 @@ import "../styles/components/switch.css";
 import { Link, NavLink } from "react-router-dom";
 import { ImMenu } from "react-icons/im";
 import { AiFillCloseCircle } from "react-icons/ai";
+
 import { useState } from "react";
 
 import { useContext } from "react";
@@ -35,6 +36,7 @@ const Navbar = () => {
 
         <div className="switch">
           <input type="checkbox" name="toggle" onChange={toggleTheme} />
+
           <label htmlFor="toggle">
             <i className="bulb">
               <span className="bulb-center" />
@@ -78,11 +80,6 @@ const Navbar = () => {
           <li>Contato</li>{" "}
         </NavLink>
       </ul>
-
-      {/* <div className="nav-buttons">
-        <span className="nav-btn">Currículo</span>
-        <span className="nav-btn">Contato</span>
-      </div> */}
     </nav>
   );
 };

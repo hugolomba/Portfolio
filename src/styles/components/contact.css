@@ -1,5 +1,10 @@
 .container-contact {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-}/*# sourceMappingURL=contact.css.map */
+} /*# sourceMappingURL=contact.css.map */
+
+@media (max-width: 912px) {
+  .container-contact {
+    flex-wrap: wrap;
+  }
+}

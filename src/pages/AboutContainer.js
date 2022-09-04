@@ -4,6 +4,8 @@ import "../styles/components/tecnologiesContainer.css";
 import { useContext } from "react";
 import { ThemeContext } from "../context/theme.context";
 
+import { Fade } from "react-awesome-reveal";
+
 import {
   DiHtml5,
   DiCss3,
@@ -35,13 +37,15 @@ const AboutContainer = () => {
       <h2>Sobre mim</h2>
       <section className={`about-container ${theme}`}>
         {/* <span>Oi! 👋</span> */}
+        <Fade>
+          <p>
+            Oi! Meu nome é Hugo Miranda Lomba, eu sou um desenvolvedor Web em
+            formação, um entusiasta e apaixonado por tecnologia.
+          </p>
 
-        <p>
-          Oi! Meu nome é Hugo Miranda Lomba, eu sou um desenvolvedor Web em
-          formação, um entusiasta e apaixonado por tecnologia.
           <p>
             Estou em processo de transição para a área de tecnologia, estudando,
-            praticando e frequentando o bootcamp de Desenvolvimento Web pela
+            praticando e cursando um bootcamp de Desenvolvimento Web pela
             Ironhacker São Paulo.
           </p>
           <p>
@@ -49,20 +53,22 @@ const AboutContainer = () => {
             progredir com as habilidades necessárias para atuar como
             desenvolvedor.
           </p>
-        </p>
 
-        <section className="technologies-container">
-          <h2>Tecnologias</h2>
-          <div className="technologies-grid">
-            {technologies.map((tech) => (
-              <div className="technology-card" id={tech.id} key={tech.id}>
-                {tech.icon}
+          <section className="technologies-container">
+            <h2>Tecnologias</h2>
+            <div className="technologies-grid">
+              <Fade cascade="true">
+                {technologies.map((tech) => (
+                  <div className="technology-card" id={tech.id} key={tech.id}>
+                    {tech.icon}
 
-                <h3>{tech.name}</h3>
-              </div>
-            ))}
-          </div>
-        </section>
+                    <h3>{tech.name}</h3>
+                  </div>
+                ))}
+              </Fade>
+            </div>
+          </section>
+        </Fade>
       </section>
     </div>
   );

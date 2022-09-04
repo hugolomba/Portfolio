@@ -72,6 +72,13 @@ nav .main-tittle span {
   justify-content: space-evenly;
   margin: 0 3rem;
 }
+
+.navbar-menu li:hover {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .navbar-menu a {
   text-decoration: none;
   color: var(--text-color);
@@ -130,3 +137,15 @@ nav .main-tittle span {
 /* .switch {
   width: 1rem;
 } */
+
+.toggle-moon-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.toggle-sun-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}

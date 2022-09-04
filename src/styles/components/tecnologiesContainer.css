@@ -1,11 +1,12 @@
 .technologies-container {
-  margin-bottom: 1.5rem;
+  margin-top: 4rem;
 }
 .technologies-container .technologies-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
+  margin-top: 3rem;
 }
 .technologies-container .technology-card {
   display: flex;

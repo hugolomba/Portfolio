@@ -1,3 +1,4 @@
+import { Fade } from "react-awesome-reveal";
 import {
   FaLinkedinIn,
   FaGithub,
@@ -45,21 +46,23 @@ const socialNetworks = [
 const ContactsCard = () => {
   return (
     <section className="contacts-card">
-      {socialNetworks.map((network) => {
-        return (
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href={network.link}
-            className="contacts-btn grow"
-            id={network.name}
-            key={network.name}
-          >
-            <p>{network.info}</p>
-            {network.icon}
-          </a>
-        );
-      })}
+      <Fade cascade="true">
+        {socialNetworks.map((network) => {
+          return (
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href={network.link}
+              className="contacts-btn grow"
+              id={network.name}
+              key={network.name}
+            >
+              <p>{network.info}</p>
+              {network.icon}
+            </a>
+          );
+        })}
+      </Fade>
     </section>
   );
 };

@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 
 import "../styles/components/socialnetworks.css";
+import { Fade } from "react-awesome-reveal";
 
 const socialNetworks = [
   {
@@ -28,20 +29,22 @@ const socialNetworks = [
 const SocialNetworks = () => {
   return (
     <section id="social-networks">
-      {socialNetworks.map((network) => {
-        return (
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href={network.link}
-            className="social-btn grow"
-            id={network.name}
-            key={network.name}
-          >
-            {network.icon}
-          </a>
-        );
-      })}
+      <Fade cascade="true">
+        {socialNetworks.map((network) => {
+          return (
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href={network.link}
+              className="social-btn grow"
+              id={network.name}
+              key={network.name}
+            >
+              {network.icon}
+            </a>
+          );
+        })}
+      </Fade>
     </section>
   );
 };

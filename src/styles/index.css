@@ -22,12 +22,6 @@ button {
   transition: 0.4s;
 }
 
-li:hover {
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .grow:hover {
   transform: scale(1.1);
 }
