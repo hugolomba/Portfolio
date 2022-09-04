@@ -4,7 +4,8 @@ import "../styles/components/switch.css";
 import { Link, NavLink } from "react-router-dom";
 import { ImMenu } from "react-icons/im";
 import { AiFillCloseCircle } from "react-icons/ai";
-
+import { RiMoonFill } from "react-icons/ri";
+import { BsFillSunFill } from "react-icons/bs";
 import { useState } from "react";
 
 import { useContext } from "react";
@@ -36,7 +37,8 @@ const Navbar = () => {
 
         <div className="switch">
           <input type="checkbox" name="toggle" onChange={toggleTheme} />
-
+          <RiMoonFill className="toggle-moon-btn" />
+          <BsFillSunFill className="toggle-sun-btn" />
           <label htmlFor="toggle">
             <i className="bulb">
               <span className="bulb-center" />

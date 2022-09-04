@@ -140,12 +140,14 @@ nav .main-tittle span {
 
 .toggle-moon-btn {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 0.3rem;
+  right: 1.8rem;
+  /* color: white; */
 }
 
 .toggle-sun-btn {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 0.3rem;
+  right: 0.3rem;
+  color: rgb(221 221 221);
 }

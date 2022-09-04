@@ -8,15 +8,7 @@ const ProjectsContainer = () => {
       <h2>Projetos</h2>
 
       <section className="projects-container">
-        <Fade cascade="true">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-        </Fade>
+        <ProjectCard />
       </section>
 
       {/* <div className="projects-container-btn">

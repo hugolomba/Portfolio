@@ -20,9 +20,7 @@ const Home = () => {
           loop: true,
         }}
       /> */}
-      <p>
-        <span>Olá Mundo!</span> Eu sou
-      </p>
+      <p>Olá Mundo! Eu sou</p>
 
       <h1>Hugo Miranda Lomba</h1>
 
