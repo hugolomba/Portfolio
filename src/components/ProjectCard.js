@@ -31,13 +31,13 @@ const projectsArr = [
     liveLink: "",
   },
 ];
-console.log(projectsArr);
+
 const ProjectCard = () => {
   return (
     <Fade cascade="true">
       {projectsArr.map((project) => {
         return (
-          <div className="project-card grow">
+          <div key={project.name} className="project-card grow">
             <img src={project.img} alt="aplication" />
             <div className="project-card-info">
               <h3>{project.name}</h3> <p>{project.description}</p>

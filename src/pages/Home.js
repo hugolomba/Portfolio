@@ -5,8 +5,6 @@ import { useContext } from "react";
 import { ThemeContext } from "../context/theme.context";
 
 import { Fade } from "react-awesome-reveal";
-import Typist from "react-typist";
-import Typewriter from "typewriter-effect";
 
 const Home = () => {
   const { theme } = useContext(ThemeContext);
