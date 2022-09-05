@@ -1,5 +1,0 @@
-[[redirects]]
-from = "/abduction-game/*"
-to = "https://abduction-game.netlify.app/"
-status = 200
-force = false

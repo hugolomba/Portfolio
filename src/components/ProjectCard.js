@@ -12,7 +12,7 @@ const projectsArr = [
     img: projectOne,
     description: "Um jogo feito com JavaScript, HTML e CSS.",
     githubLink: "https://github.com/hugolomba/Abduction-Game",
-    liveLink: "http://hugomiranda.me/Abduction-Game/",
+    liveLink: "https://abduction.hugomiranda.me/",
   },
 
   {
@@ -20,7 +20,7 @@ const projectsArr = [
     img: projectTwo,
     description: "Site pessoal e Portfólio de projetos. Desenvolido com React.",
     githubLink: "https://github.com/hugolomba/portfolio",
-    liveLink: "http://hugomiranda.me/Abduction-Game/",
+    liveLink: "http://hugomiranda.me",
   },
 
   {
