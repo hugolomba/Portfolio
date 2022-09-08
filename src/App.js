@@ -28,7 +28,7 @@ function App() {
 
   const removeExitIntent = exitIntent({
     threshold: 1,
-    maxDisplays: 1,
+    maxDisplays: 3,
     eventThrottle: 0,
     onExitIntent: () => {
       setVisibility(true);
