@@ -24,7 +24,7 @@ const Modal = () => {
           <span>go </span>
           <br />
           <span>alone! </span>
-          <span>take! </span>
+          <span>take </span>
           <span>this.</span>
         </p>
       </div>
