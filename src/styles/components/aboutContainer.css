@@ -1,0 +1,14 @@
+.about-container {
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+}
+.about-container h1 {
+  width: 100%;
+  font-size: 3rem;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+  background: var(--gradient);
+}
+.about-container p {
+  font-size: 1.3rem;
+}

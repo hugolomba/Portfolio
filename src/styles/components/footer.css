@@ -1,0 +1,15 @@
+.footer {
+  width: 100%;
+  margin-bottom: 2rem;
+  background: var(--bg-color);
+  border-radius: 1rem;
+  position: absolut;
+  bottom: 0;
+}
+.footer p {
+  font-weight: 900;
+  text-align: center;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} /*# sourceMappingURL=footer.css.map */

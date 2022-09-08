@@ -1,0 +1,73 @@
+.project-card {
+  transition: all 0.3s ease;
+  width: 16rem;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-card h3 {
+  margin-bottom: 0rem;
+}
+.project-card img {
+  width: 16rem;
+  height: auto;
+}
+.project-card button {
+  width: 9rem;
+  color: var(--text-color);
+  padding: 0.4rem 0.9rem;
+  background: var(--gradient);
+  text-decoration: none;
+  border-radius: 0.4rem;
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+  appearance: auto;
+  border-style: none;
+}
+
+.project-card-info {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.project-card-info p {
+  margin-top: 0.4rem;
+  text-align: left;
+}
+
+.project-tecnologies svg {
+  padding: 0.6em;
+  background-color: var(--bg-color-secondary);
+  border-radius: 5px;
+  color: var(--text-color-secondary);
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+}
+.project-tecnologies svg:hover {
+  transition-duration: 1s;
+  background: var(--gradient);
+  color: var(--text-color);
+}
+/* .project-tecnologies :hover > svg {
+  color: var(--text-color);
+} */
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+.fade {
+  opacity: 0.9;
+}
+
+.fade:hover {
+  opacity: 1;
+}
+.fade:hover #css {
+  color: #1572b6;
+}
+.fade:hover #js {
+  color: #f0db4f;
+}

@@ -1,31 +1,70 @@
 import projectOne from "../img/demo-img.png";
-import "../styles/components/projectCard.sass";
+import projectTwo from "../img/portfolio.png";
+import projectThree from "../img/todolist.png";
+import projectComing from "../img/coding-gif.gif";
+import "../styles/components/projectCard.css";
+import { Link } from "react-router-dom";
+import { FaGithub, FaLaptop } from "react-icons/fa";
+import { Fade } from "react-awesome-reveal";
 
-import {
-  DiHtml5,
-  DiCss3,
-  DiJsBadge,
-  DiNodejsSmall,
-  DiMysql,
-  DiReact,
-} from "react-icons/di";
+const projectsArr = [
+  {
+    name: "Abduction Game",
+    img: projectOne,
+    description: "Um jogo feito com JavaScript, HTML e CSS.",
+    githubLink: "https://github.com/hugolomba/Abduction-Game",
+    liveLink: "https://abduction.hugomiranda.me/",
+  },
+
+  {
+    name: "Portfólio Pessoal",
+    img: projectTwo,
+    description: "Site pessoal e Portfólio de projetos. Desenvolido com React.",
+    githubLink: "https://github.com/hugolomba/portfolio",
+    liveLink: "http://hugomiranda.me",
+  },
+
+  {
+    name: "To Do List",
+    img: projectThree,
+    description: "Um aplicação com de lista de tarefas",
+    githubLink: "https://github.com/hugolomba/to-do-list",
+    liveLink: "https://github.com/hugolomba/to-do-list",
+  },
+
+  {
+    name: "Em Produção",
+    img: projectComing,
+    description: "Projeto em construção. Em breve aparecerá aqui.",
+    githubLink: "",
+    liveLink: "",
+  },
+];
 
 const ProjectCard = () => {
   return (
-    <div className="project-card">
-      <img src={projectOne} alt="animation of gameplay" />
-      <div className="project-card-info">
-        <h3>Project_Name</h3>
-        <div className="project-tecnologies">
-          <DiHtml5 id="html" />
-          <DiCss3 id="css" />
-          <DiJsBadge id="js" />
-        </div>
-        <p>Description: Um jogo desenvolvido usando canvas</p>
-      </div>
+    <Fade cascade="true">
+      {projectsArr.map((project) => {
+        return (
+          <div key={project.name} className="project-card grow">
+            <img src={project.img} alt="aplication" />
+            <div className="project-card-info">
+              <h3>{project.name}</h3> <p>{project.description}</p>
+              <div className="project-tecnologies">
+                <a href={project.githubLink} target="_blank">
+                  <FaGithub id="github" />
+                </a>
+                <a href={project.liveLink} target="_blank">
+                  <FaLaptop id="laptop" />
+                </a>
+              </div>
+            </div>
 
-      <button>Ver Detalhes</button>
-    </div>
+            {/* <button>Ver Detalhes</button> */}
+          </div>
+        );
+      })}
+    </Fade>
   );
 };
 

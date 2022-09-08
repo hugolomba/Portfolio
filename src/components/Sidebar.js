@@ -1,20 +1,36 @@
-import Avatar from "../img/hugo.JPEG";
-import SocialNetworks from "./SocialNetworks";
+import sunglasses from "../img/sunglasses.png";
 
-import "../styles/components/sidebar.sass";
-import InformationContainer from "./InformationContainer";
+import profile from "../img/profile.png";
+
+import SocialNetworks from "./SocialNetworks";
+import resume from "../files/resume.pdf";
+
+import "../styles/components/sidebar.css";
+
+import { useContext } from "react";
+import { ThemeContext } from "../context/theme.context";
 
 const Sidebar = () => {
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <aside id="sidebar">
-      <img src={Avatar} alt="Hugo Miranda Lomba" />
-      {/* <h1>Hugo Miranda Lomba</h1>? */}
+    <aside id="sidebar" className={theme}>
+      {/* <img src={theme ? profileLight : profile} alt="Hugo Miranda Lomba" /> */}
+      <img src={profile} alt="Hugo Miranda Lomba" />
+
+      <img
+        className={theme ? "sunglasses-img" : "sunglasses-invisible"}
+        src={sunglasses}
+        alt="Hugo Miranda Lomba"
+      />
+
       <p className="title">Desenvolvedor Web</p>
       <SocialNetworks />
 
-      <InformationContainer />
-      <a href="#" className="btn">
-        Download Currículo
+      <a href={resume} download="Hugo Miranda Lomba">
+        <button href="#" className="btn grow">
+          Download Currículo
+        </button>
       </a>
     </aside>
   );

@@ -1,0 +1,39 @@
+#root {
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Helvetica";
+  box-sizing: border-box;
+  max-width: 1200px;
+}
+
+h2 {
+  margin: 0;
+}
+
+body {
+  background-image: url(../img/cool-background.png);
+  background-position: center;
+  background-repeat: repeat;
+}
+
+a, svg, button {
+  transition: 0.4s;
+}
+
+li:hover {
+  background: linear-gradient(90deg, #00537e 0%, #3aa17e 98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+.fade {
+  opacity: 0.9;
+}
+
+.fade:hover {
+  opacity: 1;
+}/*# sourceMappingURL=index.css.map */

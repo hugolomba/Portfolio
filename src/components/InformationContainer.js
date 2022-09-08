@@ -1,4 +1,4 @@
-import "../styles/components/informationContainer.sass";
+import "../styles/components/informationContainer.css";
 
 import { AiFillPhone, AiOutlineMail, AiFillEnvironment } from "react-icons/ai";
 
