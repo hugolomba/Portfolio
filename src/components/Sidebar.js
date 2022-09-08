@@ -1,14 +1,11 @@
-import Avatar from "../img/hugo.JPEG";
-
 import sunglasses from "../img/sunglasses.png";
 
 import profile from "../img/profile.png";
-import profileLight from "../img/profile-light.png";
+
 import SocialNetworks from "./SocialNetworks";
 import resume from "../files/resume.pdf";
 
 import "../styles/components/sidebar.css";
-import InformationContainer from "./InformationContainer";
 
 import { useContext } from "react";
 import { ThemeContext } from "../context/theme.context";

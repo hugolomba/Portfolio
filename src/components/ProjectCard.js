@@ -1,5 +1,6 @@
 import projectOne from "../img/demo-img.png";
 import projectTwo from "../img/portfolio.png";
+import projectThree from "../img/todolist.png";
 import projectComing from "../img/coding-gif.gif";
 import "../styles/components/projectCard.css";
 import { Link } from "react-router-dom";
@@ -21,6 +22,14 @@ const projectsArr = [
     description: "Site pessoal e Portfólio de projetos. Desenvolido com React.",
     githubLink: "https://github.com/hugolomba/portfolio",
     liveLink: "http://hugomiranda.me",
+  },
+
+  {
+    name: "To Do List",
+    img: projectThree,
+    description: "Um aplicação com de lista de tarefas",
+    githubLink: "https://github.com/hugolomba/to-do-list",
+    liveLink: "https://github.com/hugolomba/to-do-list",
   },
 
   {
