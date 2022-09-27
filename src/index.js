@@ -6,6 +6,9 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { ThemeProviderWrapper } from "./context/theme.context";
 import { HashRouter } from "react-router-dom";
 
+import { PrismicProvider } from "@prismicio/react";
+import { client } from "./prismic";
+
 import "./styles/index.css";
 import "./styles/normalize.css";
 
@@ -14,7 +17,9 @@ root.render(
   // <React.StrictMode>
   <HashRouter>
     <ThemeProviderWrapper>
-      <App />
+      <PrismicProvider client={client}>
+        <App />
+      </PrismicProvider>
     </ThemeProviderWrapper>
   </HashRouter>
   // </React.StrictMode>

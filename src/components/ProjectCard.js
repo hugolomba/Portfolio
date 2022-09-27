@@ -1,6 +1,7 @@
 import projectOne from "../img/demo-img.png";
 import projectTwo from "../img/portfolio.png";
 import projectThree from "../img/todolist.png";
+import projectFour from "../img/solar-system.png";
 import projectComing from "../img/coding-gif.gif";
 import "../styles/components/projectCard.css";
 import { Link } from "react-router-dom";
@@ -8,6 +9,15 @@ import { FaGithub, FaLaptop } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
 
 const projectsArr = [
+  {
+    name: "The Solar System",
+    img: projectFour,
+    description:
+      "Uma aplicação mostrando informações e curiosidades sobre os planetas do sistema solar",
+    githubLink: "https://github.com/hugolomba/the-solar-system",
+    liveLink: "https://thesolarsystem.hugomiranda.me/",
+  },
+
   {
     name: "Abduction Game",
     img: projectOne,
@@ -29,7 +39,7 @@ const projectsArr = [
     img: projectThree,
     description: "Um aplicação com de lista de tarefas",
     githubLink: "https://github.com/hugolomba/to-do-list",
-    liveLink: "https://github.com/hugolomba/to-do-list",
+    liveLink: "https://todolisthugo.netlify.app/",
   },
 
   {
