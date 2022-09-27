@@ -12,6 +12,7 @@
 .middle-content {
   display: flex;
   gap: 0.7rem;
+  min-height: 85vh;
 }
 @media (max-width: 660px) {
   .middle-content {

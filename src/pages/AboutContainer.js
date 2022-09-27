@@ -39,19 +39,28 @@ const AboutContainer = () => {
         {/* <span>Oi! 👋</span> */}
         <Fade>
           <p>
-            Oi! Meu nome é Hugo Miranda Lomba, eu sou um desenvolvedor Web em
-            formação, um entusiasta e apaixonado por tecnologia.
-          </p>
-
-          <p>
-            Estou em processo de transição para a área de tecnologia, estudando,
-            praticando e cursando um bootcamp de Desenvolvimento Web pela
-            Ironhacker São Paulo.
-          </p>
-          <p>
-            Criei esse site/portfólio para praticar o que venho aprendendo e
-            progredir com as habilidades necessárias para atuar como
-            desenvolvedor.
+            Sou desenvolvedor Frontend e tenho conhecimento/experiência em
+            ReactJs, JavaScript, HTML, CSS, ExpressJs, NodeJs e metodologias
+            ágeis.
+            <p>
+              Atualmente estou na reta final do Bootcamp de Desenvolvimento Web
+              Fullstack, na Ironhack São Paulo e estou focado em desenvolver
+              projetos para colocar em prática o que venho estudando no bootcamp
+              e em outros cursos complementares. Meus projetos podem ser
+              encontrados no meu GitHub e no meu site/portfólio pessoal. No
+              momento estou me aprofundando em ReactJs e estudando React Native
+              e TypeScript.
+            </p>
+            <p>
+              Tenho seis anos de vivência no maior banco da América Latina, onde
+              adquiri uma vasta experiência com atendimento ao cliente,
+              negócios, gestão de processos, gestão de pessoas, liderança e
+              trabalho em equipe.
+            </p>
+            {/* <p>
+              Sempre fui apaixonado por tecnologia, por isso dedicidi fazer essa
+              migração para a área.
+            </p> */}
           </p>
 
           <section className="technologies-container">

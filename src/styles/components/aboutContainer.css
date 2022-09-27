@@ -11,4 +11,7 @@
 }
 .about-container p {
   font-size: 1.3rem;
+  text-align: justify;
+  /* margin: 0; */
+  text-indent: 2rem;
 }
