@@ -64,7 +64,7 @@ const ProjectCard = ({ project }) => {
             <a href={project.data.github_link.url} target="_blank">
               <FaGithub id="github" />
             </a>
-            <a href={project.data.live_link} target="_blank">
+            <a href={project.data.live_link.url} target="_blank">
               <FaLaptop id="laptop" />
             </a>
           </div>
