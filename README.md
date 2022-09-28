@@ -7,10 +7,12 @@ Esse projeto foi uma oportunidade para colocar em prática os conhecimentos de R
 
 ## Características
 
+- Desenvolvido com React
 - Aplicação responsiva;
 - Modo Claro/Escuro
 - Animação na foto de perfil ao trocar de tema
 - Mensagem ao identificar a intenção de saída da página
+- Página de projetos através de um CMS ([Prismic](https://prismic.io/))
 
 ![](./src/img/demo1.gif)
 
