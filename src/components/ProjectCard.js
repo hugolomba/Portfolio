@@ -51,29 +51,27 @@ const projectsArr = [
   },
 ];
 
-const ProjectCard = () => {
+const ProjectCard = ({ project }) => {
+  console.log(project);
   return (
     <Fade cascade="true">
-      {projectsArr.map((project) => {
-        return (
-          <div key={project.name} className="project-card grow">
-            <img src={project.img} alt="aplication" />
-            <div className="project-card-info">
-              <h3>{project.name}</h3> <p>{project.description}</p>
-              <div className="project-tecnologies">
-                <a href={project.githubLink} target="_blank">
-                  <FaGithub id="github" />
-                </a>
-                <a href={project.liveLink} target="_blank">
-                  <FaLaptop id="laptop" />
-                </a>
-              </div>
-            </div>
-
-            {/* <button>Ver Detalhes</button> */}
+      <div key={project.id} className="project-card grow">
+        <img src={project.data.image.url} alt="aplication" />
+        <div className="project-card-info">
+          <h3>{project.data.title.text}</h3>{" "}
+          <p>{project.data.description[1].text}</p>
+          <div className="project-tecnologies">
+            <a href={project.data.github_link.url} target="_blank">
+              <FaGithub id="github" />
+            </a>
+            <a href={project.data.live_link} target="_blank">
+              <FaLaptop id="laptop" />
+            </a>
           </div>
-        );
-      })}
+        </div>
+
+        {/* <button>Ver Detalhes</button> */}
+      </div>
     </Fade>
   );
 };
