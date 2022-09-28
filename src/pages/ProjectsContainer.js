@@ -8,7 +8,13 @@ import {
 } from "@prismicio/react";
 
 const ProjectsContainer = () => {
-  const [document] = useAllPrismicDocumentsByType("project");
+  const [document, { state }] = useAllPrismicDocumentsByType("project", {
+    orderings: {
+      field: "document.first_publication_date",
+      direction: "desc",
+    },
+  });
+
   console.log(document);
 
   return (
@@ -16,7 +22,14 @@ const ProjectsContainer = () => {
       <h2>Projetos</h2>
 
       <section className="projects-container">
-        {document && <ProjectCard project={document[0]} />}
+        {state === "loading" ? (
+          <p>Loading...</p>
+        ) : (
+          document &&
+          document.map((project) => {
+            return <ProjectCard project={project} />;
+          })
+        )}
       </section>
 
       {/* <div className="projects-container-btn">
