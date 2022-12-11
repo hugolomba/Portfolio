@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "@vercel/analytics": "^0.1.6",
     "bootstrap": "^3.4.1",
     "emailjs-com": "^3.2.0",
     "exit-intent": "^1.1.0",
